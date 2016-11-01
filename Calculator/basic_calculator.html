@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="jsc.js"></script>
+</head>
+<body>
+<div id="main">
+     <h2>Simple Calculator</h2>
+
+    <input id="Result" type="text" readonly=0 name="answer" value="0" name="younameit"/>
+    <div id="keys">
+        <div id="FirstRow">
+            <button id="ClearAll" type="reset" value="CE" class="clean" onclick="insertText('CE');">CE</button>
+            <button id="Clear" type="reset" value="C" class="clean" onclick="insertText('C')">C</button>
+            <button id="clear" type="button" value="x" class="operators operand" onclick="insertText('x');">x</button>
+            <button id="Divide" type="button" value="/" class="operators operand" onclick="insertText('/');">/</button>
+        </div>
+
+        <div id="SecondRow">
+            <button id="Seven" type="button" value="7" class="Show" onclick="insertText('7');">7</button>
+            <button id="Eight" type="button" value="8" class="Show" onclick="insertText('8');">8</button>
+            <button id="Nine" type="button" value="9" class="Show" onclick="insertText('9');">9</button>
+            <button id="Mul" type="button" value="*" class="operators operand" onclick="insertText('*');">X</button>
+            
+        </div>
+
+        <div id="ThirdRow">
+            <button id="Four" type="button" value="4" class="Show" onclick="insertText('4');">4</button>
+            <button id="Five" type="button" value="5" class="Show" onclick="insertText('5');">5</button>
+            <button id="six" type="button" value="6" class="Show" onclick="insertText('6');">6</button>
+            <button id="Sub" type="button" value="-" class="operators operand" onclick="insertText('-');">-</button>
+            
+        </div>
+
+        <div id="FourthRow">
+            <button id="One" type="button" value="1" class="Show" onclick="insertText('1');">1</button>
+            <button id="Two" type="button" value="2" class="Show" onclick="insertText('2');">2</button>
+            <button id="Three" type="button" value="3" class="Show" onclick="insertText('3');">3</button>
+            <button id="Add" type="button" value="x" class="operators operand" onclick="insertText('+');">+</button>
+            
+        </div>
+        
+        <div id="FifthRow">
+        	<button id="plusminus" type="button" value="x" class="operators operand" onclick="insertText('+-');">+-</button>
+            <button id="Zero" type="button" value="0" class="Show" onclick="insertText('0');">0</button>
+            <button id="Dot" type="button" value="." class="Show" onclick="insertText('.');">.</button>
+            <button id="Calculate" type="button" value="=" class="operand" onclick="insertText('=');">=</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
